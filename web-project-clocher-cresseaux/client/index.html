@@ -1,0 +1,75 @@
+<!doctype HTML>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>TROIS P'TITS CHATS</title>
+    <!-- Load Vue followed by Vue Router -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/http-vue-loader/src/httpVueLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-router/dist/vue-router.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/home/logo_without.png">
+
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="home">
+                <nav>
+                    <ul>
+                        <li class="header_button_each"><a href="home.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main> <!--
+            <router-view :cats="cats" :panier="panier" @add-cat="addtocart" @remove-cat="removefromcart"
+                @choice-day="choiceday" @register="RegisterClient" @login="LoginClient" @confirm="confirm"></router-view>
+                -->
+
+        </main>
+
+    </div>
+    <footer>
+        <div class = "footer">
+            <div class = "inner-footer">
+                <div class = "footer-items", class = "footer1">
+                    <h1>WHY ?</h1>
+                    <p>
+                        To complete our fourth year at EFREI Paris (an engineering school) we had to create a website. 
+                        Thus, we choose the subject of cat shelter and hope you've find the content interisting. 
+                        Do not hesitate to contact us via our mails our to follow us on social media ! 
+                        <br><br>NB : we are the owner of all the pictures of the website.
+                        <br><br>Sincerily, <br>Nicolas & Louis 
+                    </p>
+                </div>
+                <div class = "footer-items", class = "footer2">
+                    <h2>MENU</h2>
+                    <div class = "border"></div>
+                    <ul class = "footer-list">
+                        <li class="header_button_each"><a href="home.html">Home</a></li>                   
+                    </ul>
+                </div>
+                
+                <div class = "footer-items", class = "footer3">
+                    <h2>Contact us</h2>
+                    <a href = "mailto:nicolas.cresseaux@efrei.net"><i class="fa fa-envelope" ></i> nicolas.cresseaux@efrei.net<br></a>
+                    <a href = "louis.clocher@efrei.net"><i class="fa fa-envelope" ></i> louis.clocher@efrei.net</a>
+                    <img src="images/home/logo2_3PC.JPG" alt="Logo_image">
+                </div>
+
+                <div class = "footer-bottom">
+                    Copyright &copy; Nicolas Cresseaux & Louis Clocher 2021. All right reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/vue-application.js"></script>
+</body>
+
+</html>

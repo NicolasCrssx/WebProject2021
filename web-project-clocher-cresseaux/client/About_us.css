@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Shadows+Into+Light&display=swap');
+
+
+*{
+    margin : 0;
+    padding : 0;
+    text-decoration : none;
+    font-family : 'Raleway', sans-serif;
+}
+
+body{
+    background : #fff9f2;
+    width : 100%;
+    display : flex;
+    flex-direction: column;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------
+HEADER
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+header{
+  display : flex;
+  justify-content: start;
+}
+
+nav {
+    width : 100%;
+    background-color: transparent;
+    padding: 10px;
+  }
+  
+  nav > ul {
+    margin : 0px;
+    padding : 0px;
+    padding-top : 10px;
+  }
+  
+  nav .header_button_each {
+    list-style-type : none;
+  }
+    
+  nav > ul > .header_button_each {
+    float : right;
+    position : relative;
+  }
+  
+  nav >ul::after{
+    content : "";
+    display : table;
+    clear : both;
+  }
+  
+  nav a{
+    display : inline-block;
+    text-decoration : none;
+  }
+  
+  nav > ul > .header_button_each > a {
+    padding : 10px 20px;
+    color : #6a6774;
+    border-radius: 25px;
+  }
+  
+  nav .header_button_each a:hover{
+    background-color : #6a6774;
+    color : #fff9f2;
+    transition : all 0.6s;
+    cursor : pointer;
+  }
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------
+BODY
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+.wrapper{
+  margin-top : 50px;
+}
+
+.wrapper .title{
+    max-width : 500px;
+    width : 100%;
+    margin : 0 auto 30px;
+    background : #fff;
+    padding : 30px;
+    border-radius : 8px;
+    box-shadow : 0 1px 2px rgba(0,0,0,0.07);
+    text-align : center;
+    text-transform : uppercase;
+    font-size : 58px;
+    color :  #94f8ff;
+}
+
+.wrapper .team{
+    width : auto; 
+    display : flex; 
+    text-align : center;
+    justify-content : center;
+    flex-wrap : wrap;
+    margin-bottom: 20px;
+}
+
+.wrapper .team .team_member{
+    width : 325px;
+    margin : 10px;
+    background : #fff;
+    border-radius : 8px;
+    padding : 25px;
+    box-shadow: 2px 2px 5px #af99ff;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+.wrapper .team .team_member:nth-child(2){
+    width : 325px;
+    margin : 10px;
+    background : #fff;
+    border-radius : 8px;
+    padding : 25px;
+    box-shadow: 2px 2px 5px #6a6774;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+
+
+.wrapper .team .team_member img{
+    width : 80px;
+    border-radius : 45px;
+}
+
+.wrapper .team .team_member h3{ 
+    color :  #dad0fd;
+}
+
+.wrapper .team .team_member:nth-child(2) h3{ 
+    color : #6a6774;
+}
+
+
+.wrapper .team .team_member span{
+    color : #999;
+    font-size : 12px; 
+}
+
+.wrapper .team .team_member p{
+    margin : 15px 0;
+    text-align : justify; /*a voir si on laisse comme ça ou si on centre */
+}
+
+.wrapper .team .team_member .button_group{
+    display : flex;
+}
+
+.wrapper .team .team_member .button_group a{
+    width : 40px;
+    background : #ddd;
+    margin : 0 10px; 
+    padding : 10px;
+    border-radius : 45px;
+    color : #444;
+    text-transform : capitalize;
+    transition : all 0.3s ease;
+}
+
+.wrapper .team .team_member .button_group a:hover{
+    color : #fff;
+    background : #af99ff;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------
+FOOTER
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+.footer {
+  width : 100%;
+  background :#6a6774;
+  display : block;
+}
+
+.inner-footer {
+  width : 95%;
+  margin : auto;
+  padding : 30px 10px;
+  display : flex;
+  flex-wrap : wrap;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  text-align : justify;
+  color :#b3f5fa;
+}
+
+.footer-items {
+  width : 30%;
+  padding : 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-items:nth-child(2) {
+  width : 15%;
+}
+
+h1{
+  padding : 5px 0;
+  font-size: 25px;
+  color : white;
+  text-transform: uppercase;
+}
+
+.footer-item p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+h2{
+  margin : 10px 0;
+  color : #dad0fd;
+  font-size :16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.border {
+  height : 2px;
+  width : 105px;
+  background :#dad0fd;
+}
+
+.footer-list {
+  list-style : none;
+  color : white;
+  font-size : 16px;
+  letter-spacing: 0.5px;
+}
+
+.footer-list a {
+  text-decoration : none;
+  outline : none;
+  color : white;
+  transition : 0.3s;
+}
+
+.footer-list a:hover {
+  color : #dad0fd;
+}
+
+.footer-list li{
+  margin : 10px 0;
+  height : 30px;
+}
+
+li i {
+  margin-right : 20px;
+  color : black;
+  text-decoration: none;
+}
+
+
+.footer-items img {
+  width : 80px;
+  border-radius : 45px;
+  margin : 25px;
+  margin-left: 75px;
+}
+
+.footer-bottom {
+  padding : 10px;
+  color : white;
+  font-size : 12px;
+}
+
+@media screen and (max-width : 1085px) {
+  .footer-items {
+    width : 50%;
+  }
+}
+
+@media screen and (max-width : 600px) {
+  .footer-items {
+    width : 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

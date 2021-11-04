@@ -1,3 +1,5 @@
+-> cd web-project-clocher-cresseaux
+
 # Install
 
 `npm install`

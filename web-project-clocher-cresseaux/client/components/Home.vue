@@ -7,15 +7,8 @@
 <script>
 module.exports = {
   props: {
-    cats : { type: Array, default: [] },
+    cats: { type: Array, default: [] },
     panier: { type: Object }
-  },
-  data () {
-    return {
-    }
-  },
-  methods: {
-
   }
 }
 </script>

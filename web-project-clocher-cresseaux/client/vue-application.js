@@ -1,13 +1,13 @@
 const Home = window.httpVueLoader('./components/Home.vue')
 const cats = window.httpVueLoader('./components/cats.vue')
-const page2 = window.httpVueLoader('./components/page2.vue')
-const page3 = window.httpVueLoader('./components/page3.vue')
+const Panier = window.httpVueLoader('./components/Panier.vue')
+const Login = window.httpVueLoader('./components/Login.vue')
 
 const routes = [
   { path: '/', component: Home },
   { path: '/cats', component: cats },
-  { path: '/page2', component: page2 },
-  { path: '/page3', component: page3 }
+  { path: '/Panier', component: Panier },
+  { path: '/Login', component: Login }
 ]
 
 const router = new VueRouter({
@@ -32,7 +32,7 @@ var app = new Vue({
     this.panier = res2.data
   },
   methods: {
-    async addtocart(catId) {
+    async addToCart(catId) {
       try {
       const days = 3 ;
       const id = parseInt(catId);
@@ -42,12 +42,12 @@ var app = new Vue({
       });
       this.panier.cats.push(res.data);
       } catch(e) {
-        router.push('/page3')
+        router.push('/Login')
         alert('You need to log into your account before choosing a kitten !')
       }
     },
 
-    async removefromcart(catId) {
+    async removeFromCart(catId) {
       const res = await axios.delete("/api/panier/" + catId);
       const index = this.panier.cats.findIndex((a) => a.id === catId);
       this.panier.cats.splice(index, 1);

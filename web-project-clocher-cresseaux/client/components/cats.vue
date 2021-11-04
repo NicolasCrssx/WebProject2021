@@ -10,8 +10,8 @@
           <h2>{{ cat.name }} - {{ cat.age }} Months </h2>
         <div>
 
-            <button v-if="panier.cats.find(a => a.id === cat.id)" @click="removefromcart(cat.id)">Remove from cart</button>
-            <button v-else @click="addtocart(cat.id)">Add to the cart</button>
+            <button v-if="panier.cats.find(a => a.id === cat.id)" @click="removeFromCart(cat.id)">Remove from cart</button>
+            <button v-else @click="addToCart(cat.id)">Add to the cart</button>
 
         </div>
         </div>
@@ -27,16 +27,12 @@ module.exports = {
     cats: { type: Array, default: [] },
     panier: { type: Object }
   },
-  data () {
-    return {
-    }
-  },
   methods: {
-    addtocart (catId) {
+    addToCart (catId) {
       this.$emit('add-cat', catId)
     },
 
-    removefromcart(catId) {
+    removeFromCart(catId) {
       this.$emit("remove-cat", catId);
     },
   }

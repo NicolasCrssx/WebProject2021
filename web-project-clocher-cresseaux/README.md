@@ -11,13 +11,12 @@
 
 ---------------------------------------------
 
-Bonjour M. Veillard, nous éspérons écrire ce message AVANT que vous fassiez la revue de notre projet. 
+Projet réalisé par Nicolas CRESSEAUX et Louis CLOCHER.
 
-Tout d'abord, comme vous allez pouvoir le remarquer, nous avons finalement décidé de faire notre site web 
-sur un refuge de chatons (les chats ne sont-ils pas le meilleur animal du monde ?)
+Ayant un projet à rendre le meme jour que celui-ci, nous avions totalement oublié de rajouter la video de test. 
+Nous éspérons que cela ne pose pas de problèmes et que vous avez examiné notre rendu après ce commit.
 
-Notre site est en place, nous sommes actuellement en train d'essayer de faire fonctionner la base de données.
 
-Bon courage pour vos review de projets !
+Bon courage pour vos corrections.
 
-Nicolas CRESSEAUX et Louis CLOCHER, IT3
+Nicolas CRESSEAUX, Louis CLOCHER
